@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 393 90.54">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        filter: url(#outer-glow-1);
+      }
+
+      .cls-2 {
+        filter: url(#outer-glow-2);
+      }
+
+      .cls-4 {
+        filter: url(#outer-glow-3);
+      }
+
+      .cls-5 {
+        filter: url(#outer-glow-4);
+      }
+    </style>
+    <filter id="outer-glow-1" x="34" y="-6.46" width="326" height="86" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="2"/>
+      <feFlood flood-color="#000" flood-opacity="1"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="outer-glow-2" x="0" y="75.54" width="393" height="15" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur-2" stdDeviation="2"/>
+      <feFlood flood-color="#000" flood-opacity=".75"/>
+      <feComposite in2="blur-2" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="outer-glow-3" x="0" y="10.54" width="37" height="47" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur-3" stdDeviation="2"/>
+      <feFlood flood-color="#000" flood-opacity="1"/>
+      <feComposite in2="blur-3" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="outer-glow-4" x="356" y="10.54" width="37" height="47" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur-4" stdDeviation="2"/>
+      <feFlood flood-color="#000" flood-opacity="1"/>
+      <feComposite in2="blur-4" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="_レイヤー_1-2" data-name="レイヤー_1">
+    <g class="cls-3">
+      <path class="cls-1" d="M40.78,68.36c7.92,0,8.4-.58,8.4-7.53V10.62c0-6.95-.48-7.53-8.3-7.53V0h24.72v3.09c-7.82,0-8.3.58-8.3,7.53v50.21c0,6.95.48,7.53,8.3,7.53v3.09h-24.82v-3.09Z"/>
+      <path class="cls-1" d="M101.61,4.15v56.68c0,7.05.39,7.53,9.08,7.53v3.09h-26.17v-3.09c8.59,0,9.08-.48,9.08-7.53V4.15h-11.78c-5.7,0-6.37.48-8.5,12.07h-3.57l2.32-16.22h51.08l2.22,16.22h-3.57c-2.12-11.68-2.9-12.07-8.4-12.07h-11.78Z"/>
+      <path class="cls-1" d="M194.7,3.09c-7.15,0-7.72.58-7.72,7.53v50.21c0,6.95.58,7.53,7.72,7.53v3.09h-22.5v-3.09c6.28,0,6.76-.58,6.76-7.43v-24.72h-33.12v24.72c0,6.86.48,7.43,6.76,7.43v3.09h-22.5v-3.09c7.05,0,7.63-.58,7.63-7.53V10.62c0-6.95-.58-7.53-7.63-7.53V0h22.5v3.09c-6.28,0-6.76.48-6.76,7.34v21.82h33.12V10.52c0-6.95-.48-7.44-6.76-7.44V0h22.5v3.09Z"/>
+      <path class="cls-1" d="M200.98,68.36c7.92,0,8.4-.58,8.4-7.53V10.62c0-6.95-.48-7.53-8.3-7.53V0h24.72v3.09c-7.82,0-8.3.58-8.3,7.53v50.21c0,6.95.48,7.53,8.3,7.53v3.09h-24.82v-3.09Z"/>
+      <path class="cls-1" d="M260.36,27.71l18.73,33.31c3.96,6.66,5.31,7.34,9.75,7.34v3.09h-12.94l-20.86-37.66-7.05,8.98v17.96c0,7.05.48,7.63,7.15,7.63v3.09h-22.88v-3.09c7.05,0,7.63-.58,7.63-7.53V10.62c0-6.95-.58-7.53-7.63-7.53V0h22.5v3.09c-6.28,0-6.76.68-6.76,7.53v25.2h.29l19.12-24.62c2.51-3.28,3.96-5.31,3.96-6.57,0-1.16-1.35-1.54-4.34-1.54V0h17.77v3.09c-3.86,0-5.21.48-8.69,4.73l-15.74,19.89Z"/>
+      <path class="cls-1" d="M308.94,46.83c0,8.01.97,21.53,16.99,21.53s16.7-15.26,16.7-21.34V10.62c0-7.05-.58-7.53-7.05-7.53V0h18.25v3.09c-6.28,0-6.76.58-6.76,7.53v37.66c0,17.67-8.79,24.62-22.5,24.62-22.4,0-23.85-14.68-23.85-25.68V10.62c0-6.95-.48-7.53-7.05-7.53V0h22.3v3.09c-6.66,0-7.05.39-7.05,7.53v36.21Z"/>
+    </g>
+    <line class="cls-2" x1="6" y1="83.04" x2="387" y2="83.04"/>
+    <g class="cls-4">
+      <path class="cls-1" d="M30.85,34.06s.1,0,.15,0h0c-6.79-.12-12.27-7.7-12.35-17.08h0c0,.07,0,.13,0,.2,0,9.54-5.6,17.28-12.5,17.28-.05,0-.1,0-.15,0h0c6.79.12,12.27,7.7,12.35,17.08h0c0-.07,0-.13,0-.2,0-9.54,5.6-17.28,12.5-17.28Z"/>
+    </g>
+    <g class="cls-5">
+      <path class="cls-1" d="M386.85,34.06s.1,0,.15,0h0c-6.79-.12-12.27-7.7-12.35-17.08h0c0,.07,0,.13,0,.2,0,9.54-5.6,17.28-12.5,17.28-.05,0-.1,0-.15,0h0c6.79.12,12.27,7.7,12.35,17.08h0c0-.07,0-.13,0-.2,0-9.54,5.6-17.28,12.5-17.28Z"/>
+    </g>
+  </g>
+</svg>
