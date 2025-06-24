@@ -8,7 +8,7 @@ const AnimatedSVG = () => {
     // 各pathに個別のstyle属性でアニメーション遅延を設定
 
     // 各パスの遅延秒数
-    const delays = [0, 0.2, 0.4, 0.6, 0.8, 1.0, 1.2, 1.4, 1.6];
+    const delays = [0, 0.2, 0.3, 0.4, 0.8, 1.0, 1.2, 1.4, 1.6];
 
     return (
         <svg

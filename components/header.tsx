@@ -28,7 +28,6 @@ export default function Header() {
           }
           bg-transparent border-none shadow-none
         `}
-        style={{ boxShadow: isScrolled ? '0 8px 32px 0 rgba(31, 38, 135, 0.15)' : undefined }}
       >
         <div className="px-4 sm:px-6 w-full">
           <div className="flex justify-between items-center h-16 md:py-4">
