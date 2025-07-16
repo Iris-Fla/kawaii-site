@@ -4,7 +4,7 @@ import Squares from "@/components/squares";
 import AnimatedSVG from "@/components/animatedsvg";
 import { Racing_Sans_One } from "next/font/google";
 
-export const racingSans = Racing_Sans_One({
+const racingSans = Racing_Sans_One({
   weight: "400",
   display: "swap",
   subsets: ["latin"],
