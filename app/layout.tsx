@@ -3,7 +3,7 @@ import { M_PLUS_Rounded_1c,Racing_Sans_One} from "next/font/google";
 import Header from "@/components/header";
 import "./globals.css";
 
-export const mPlus = M_PLUS_Rounded_1c({
+const mPlus = M_PLUS_Rounded_1c({
   weight: ["300", "400", "500"],
   display: "swap",
   subsets: ["latin"],
