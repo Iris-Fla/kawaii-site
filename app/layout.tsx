@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { M_PLUS_Rounded_1c,Racing_Sans_One} from "next/font/google";
+import { M_PLUS_Rounded_1c } from "next/font/google";
 import Header from "@/components/header";
 import "./globals.css";
 
