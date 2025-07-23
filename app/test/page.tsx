@@ -1,10 +1,11 @@
 "use client";
 import About from "@/components/about";
-import styles from "./style.module.css";
+import MainVisual from "@/components/mv";
 
 export default function Test() {
     return (
-        <div className={styles.test}>
+        <div>
+            <MainVisual />
             <About />
         </div>
     )
