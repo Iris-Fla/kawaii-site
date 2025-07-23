@@ -1,19 +1,10 @@
 "use client";
 import Link from 'next/link'
 import Image from 'next/image'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 export default function Header() {
-  const [isScrolled, setIsScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
-    }
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
 
   return (
     <>
@@ -21,11 +12,7 @@ export default function Header() {
         className={`
           fixed top-4 left-1/2 -translate-x-1/2 w-[95vw] max-w-7xl z-50 transition-all duration-300
           h-16 flex items-center
-          md:h-auto
-          ${isScrolled
-            ? 'md:bg-white/30 md:shadow-lg md:backdrop-blur-md md:rounded-2xl md:border md:border-white/20'
-            : 'md:bg-white/60 md:backdrop-blur-md md:rounded-2xl md:border md:border-white/40'
-          }
+          md:h-auto md:bg-white/30 md:shadow-lg md:backdrop-blur-md md:rounded-2xl md:border md:border-white/20
           bg-transparent border-none shadow-none
         `}
       >
@@ -59,13 +46,13 @@ export default function Header() {
             
             {/* Navigation（PCのみ表示） */}
             <nav className="hidden md:flex space-x-8">
-              <Link href="/about" className="text-white hover:text-pink-500 transition-colors font-bold">
+              <Link href="/about" className="text-white hover:text-pink-500 transition-colors">
                 About
               </Link>
-              <Link href="/gallery" className="text-white hover:text-pink-500 transition-colors font-bold">
+              <Link href="/gallery" className="text-white hover:text-pink-500 transition-colors">
                 Gallery
               </Link>
-              <Link href="/contact" className="text-white hover:text-pink-500 transition-colors font-bold">
+              <Link href="/contact" className="text-white hover:text-pink-500 transition-colors">
                 Contact
               </Link>
             </nav>
@@ -82,13 +69,13 @@ export default function Header() {
           rounded-none
         `}
       >
-        <Link href="/about" className={`text-2xl font-bold transition-colors duration-200 ${menuOpen ? 'text-black' : 'text-pink-500'}`} onClick={() => setMenuOpen(false)}>
+        <Link href="/about" className={`text-2xl transition-colors duration-200 ${menuOpen ? 'text-black' : 'text-pink-500'}`} onClick={() => setMenuOpen(false)}>
           About
         </Link>
-        <Link href="/gallery" className={`text-2xl font-bold transition-colors duration-200 ${menuOpen ? 'text-black' : 'text-pink-500'}`} onClick={() => setMenuOpen(false)}>
+        <Link href="/gallery" className={`text-2xl transition-colors duration-200 ${menuOpen ? 'text-black' : 'text-pink-500'}`} onClick={() => setMenuOpen(false)}>
           Gallery
         </Link>
-        <Link href="/contact" className={`text-2xl font-bold transition-colors duration-200 ${menuOpen ? 'text-black' : 'text-pink-500'}`} onClick={() => setMenuOpen(false)}>
+        <Link href="/about/#contact" className={`text-2xl transition-colors duration-200 ${menuOpen ? 'text-black' : 'text-pink-500'}`} onClick={() => setMenuOpen(false)}>
           Contact
         </Link>
       </nav>

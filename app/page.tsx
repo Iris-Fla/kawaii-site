@@ -2,13 +2,6 @@
 import Image from "next/image";
 import Squares from "@/components/squares";
 import AnimatedSVG from "@/components/animatedsvg";
-import { Racing_Sans_One } from "next/font/google";
-
-const racingSans = Racing_Sans_One({
-  weight: "400",
-  display: "swap",
-  subsets: ["latin"],
-});
 
 export default function Home() {
   return (
@@ -44,14 +37,6 @@ export default function Home() {
             />
           </div>
         </div>
-      </div>
-      <div className="relative">
-        <p className={`${racingSans.className} absolute top-0 left-30 text-4xl font-bold`}>
-          Aboutea
-        </p>
-        <p className="flex justify-center items-center text-lg min-h-[60px]">
-          いちくの作品や活動を紹介するポートフォリオサイトです。
-        </p>
       </div>
     </div>
   );

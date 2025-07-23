@@ -21,7 +21,7 @@ const AnimatedSVG = () => {
                 .animated-path {
                     fill: none;
                     stroke: #fff;
-                    stroke-width: 5; /* 太くする */
+                    stroke-width: 1; /* 太くする */
                     stroke-linecap: round;
                     stroke-linejoin: round;
                     stroke-dasharray: 1000;
