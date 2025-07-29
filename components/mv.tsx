@@ -1,19 +1,35 @@
 "use client";
-import AnimatedSVG from "./animatedsvg";
+import Image from "next/image";
+import { useState, useEffect } from "react";
 
 const MainVisual = () => {
+  const [svgKey, setSvgKey] = useState(0);
+
+  useEffect(() => {
+    setSvgKey((prev) => prev + 1); // マウント時にkeyを変えてSVGを再描画
+  }, []);
+
   return (
     <div className="relative w-full h-screen bg-[#222] flex items-center justify-center overflow-hidden">
       {/* メインコンテンツ */}
       <div className="relative z-10 flex flex-col lg:flex-row items-center justify-center w-full mx-auto px-8 gap-12">
         {/* 左側: ithikuテキストと下線 */}
         <div className="flex-1 flex flex-col items-center lg:items-start">
-          <div className="relative">
-            <AnimatedSVG />
+          <div className="relative mx-auto">
+            <div className="flex justify-center w-3/4 mx-auto">
+              {/* keyを付与してSVGを再描画 */}
+              <Image
+                key={svgKey}
+                src="/animated_title.svg"
+                width={380}
+                height={180}
+                alt="Ithiku"
+              />
+            </div>
             {/* 二本の下線 */}
-            <div className="w-full">
-              <div className="h-0.5 bg-white mb-2"></div>
-              <div className="h-0.5 bg-white opacity-70"></div>
+            <div className="mt-3 flex flex-col items-center">
+              <div className="h-0.5 bg-white opacity-70 mb-2 w-full"></div>
+              <div className="h-0.5 bg-white w-full"></div>
             </div>
           </div>
         </div>
